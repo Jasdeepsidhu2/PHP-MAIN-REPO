@@ -1,0 +1,11 @@
+
+Day -1
+
+Set up the Xammp and Bitbucket. Had some difficulties due to first time but eventually installed and used.
+
+Day-2
+
+Learnt the basics of PHP. Practice on Sqola and solve the problem of FIZZBUZZ.
+
+Day-3
+
