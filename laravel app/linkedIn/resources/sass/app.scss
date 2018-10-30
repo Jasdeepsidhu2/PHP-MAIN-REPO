@@ -1,0 +1,181 @@
+
+//  @author   Jasdeep sidhu   Date Oct 30, 2018   
+ 
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// **********linkedIn App styles****************
+
+.wrapper{
+  margin: 0 auto;
+ }
+
+
+body{
+  background: #f5f5f5;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #283e4a;
+    color: white;
+    height: 80px;
+
+      .logo{
+        margin-right: 5%;
+        background: #0077B5;
+      }
+      .logo-search{
+        display: flex;
+        height: 50px;
+        align-items: center;
+       
+      }
+      .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        list-style: none;
+
+      }
+}
+/* *************Top Section************* */
+.top{
+  
+  background: #f5f5f5;
+  padding: 20px;
+ 
+    .cards{
+      display: flex;
+      justify-content: space-around;
+      height: 250px;
+   
+        .step1,.step2,.step3{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 90%;
+          width: 30%;
+          padding: 20px;
+          background: white;
+          text-align: center;
+          color: #0298b3;
+          margin: 10px;
+            button{
+              background: #0298b3;
+              
+            }
+        }
+    }
+}
+
+/* **********main section*********** */
+
+
+.main{
+  display: flex;
+  margin-top: 25px;
+
+                // *******user- profile**********
+
+    .user-profile{   
+      margin: 0 3% 3% 3%;    
+      height: 400px;
+      width: 25%;
+      background: white; 
+      border: 1px solid grey;
+
+            .profile-top{
+                  height: 20%;
+                  background: #0298b3;
+                  position: relative;
+                
+            }
+            .profile-pic{
+                  height: 100px;
+                  width: 100px;
+                  border-radius: 50%;
+                  background: teal;
+                  position: absolute;
+                  left: 35%;
+                  bottom: -50%;
+            }
+            .user-name{
+                  height:   40%;
+                  text-align: center;
+                  padding: 20%;
+                  border-bottom: 1px solid grey;
+            }
+            .connections{
+                 
+                  height: 40%;
+                  padding: 10px;
+                  display: flex;
+                  justify-content: space-between;
+            }
+      }
+}
+
+// ****************comments section*********
+
+.comments{
+  margin: 0 3% 3% 0;    
+  width: 40%;
+  background: white; 
+  display: flex;
+  flex-direction: column;
+
+      .member{
+          display: flex;
+          margin: 20px;
+              
+
+            .image-container{
+              height: 100px;
+              width: 80px;
+              margin-right: 20px;
+
+            }
+            .member-image{
+              width: 100%;
+              border-radius: 50%;
+                        
+            }
+            .member-description{
+              width: 70%
+              
+            }
+            .likeShare{
+              display: flex;
+                  .like,.comment,.share{
+                    width:80px;
+                    padding: 1%;
+                    margin: 1%;
+                    background: #dfe5e6;
+                    border-radius: 20%;
+
+                  }
+            }
+
+       }
+}
+
+// ***************talks section*************
+
+.talks{
+  margin: 0 3% 3% 0;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 28%;
+  background: white; 
+  padding: 20px;
+}

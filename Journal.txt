@@ -9,3 +9,14 @@ Learnt the basics of PHP. Practice on Sqola and solve the problem of FIZZBUZZ.
 
 Day-3
 
+Learnt nameapaces and refactoring code with include.
+Its quite easy.
+
+Day-4 to Day-6
+ 
+ Installed  laravel and composer (quite complicate and took time to get understanding of framework)
+ Start 'Twitter'  project and faced challenges to get views, routes and controller stuff.
+ Learnt many new and complicated coding with the help of teacher.
+
+ Made assignment with the reference of Twitter project.
+ 
