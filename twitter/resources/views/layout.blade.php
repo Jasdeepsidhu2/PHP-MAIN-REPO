@@ -12,13 +12,29 @@
 </head>
 <body>
     <header>
-        <div class="top-top">top-top</div>
-        <div class="hero bg-1"></div>
+        <div class="top-top">top-top
+        
+        <?php if(auth::check()):?> 
+                <div>
+                <h2>Hello <?php echo request()->user()->name?>!</h2>
+                    @include('logout')
+                </div>
+               
+            
+            <?php else:?>
+                <a href="/login">Login</a>
+
+        <?php endif;?>
+    
+        </div>
+        <div class="hero bg-1">
+        <img style = " width:100%; height:100%"src="https://pbs.twimg.com/profile_banners/158331222/1528372321/1500x500" alt="">
+        </div>
 
          @yield('headerBottom')
     </header>
-    <main class="flex full-page ">
+    
         @yield('content')
-    </main>
+   
   </body>
 </html>

@@ -3,11 +3,12 @@
         <div class="stats flex ">
             <div class="profile-pic">
             
+            <img style = "border-radius: 50%; width:100%; height:100%"src="<?php echo $user->profile->image?>" alt="">
             </div>
             <ul class='stats-links flex '>
                 <li ><a  href="#">
                         <div class="label">Tweets</div>
-                        <div class="value"><?php echo $user->tweets?></div></a></li>
+                        <div class="value"><?php echo $user->tweets->count()?></div></a></li>
                 <li><a href="#"> 
                         <div class="label">Following</div>
                         <div class="value"> <?php echo $user->following?></div>
@@ -19,7 +20,9 @@
                     </a></li>
                 <li><a href="#"> 
                         <div class="label">Likes</div>
-                        <div class="value"><?php echo $user->likes?></div>
+                        <!-- <div class="value"><php echo $user->likes?></div> -->
+                        <div class="value"><?php echo $user->likedTweets->count()?>
+
                     </a></li>
                 <li><a href="#"> 
                     <div class="label">Moments</div>
@@ -31,15 +34,15 @@
 @endsection
 
 @section('content')
-
+<main class="flex  full-page ">
         <div class="user-details bg-1 ">
                     <h3><?php echo $user->name ?></h2> 
-                    <p><?php echo $user->handle ?></p>
+                    <p><?php echo $user->profile->handle ?></p>
                 
-                    <p><?php echo $user->description ?></p>
+                    <p><?php echo $user->profile->description ?></p>
                 
-                    <span><i class="fas fa-link"></i><a href="#"><?php echo $user->link ?></a></span>
-                    <p><?php echo $user->joinedDate ?><p>
+                    <span><i class="fas fa-link"></i><a href="#"><?php echo $user->profile->website ?></a></span>
+                    <p><?php echo $user->created_at->format('Y') ?><p>
         
             </div>
             <div class="tweets flex-v bg-w">
@@ -64,6 +67,7 @@
                     </div>
                     
             </div>
+</main>
     @endsection
 
     

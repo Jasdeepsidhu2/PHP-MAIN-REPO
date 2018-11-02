@@ -27,4 +27,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function tweets()
+    {
+        return $this->hasMany('App\Model\Tweet');
+    }
+
+    public function likedTweets()
+    {
+        return $this->belongsToMany('App\Model\Tweet');
+        //  I can also override the join table name with
+        // a second argument.
+        // return $this->belongsToMany('App\Model\Tweet', 'likes');
+    }
+    public function profile(){
+        return $this->hasOne('App\Model\Profile');
+    }
 }

@@ -12,15 +12,24 @@
 */
 
 Route::get('/', 'TweetsController@index');
-Route::get('/contact', 'ContactController@index2' );
+Route::get('/splash', 'TweetsController@splash');
+
+
+Route::get('/profile', 'ProfileController@index2' );
+Route::post('/profile', 'ProfileController@update' );
 Route::get('/demo', 'TweetsController@demo' );
 
 
 
 
-Route::get('/page1', function () {
-    return view('page1');
-});
-Route::get('/page2', function () {
-    return view('page2');
-}); 
+
+// Route::get('/page1', function () {
+//     return view('page1');
+// });
+// Route::get('/page2', function () {
+//     return view('page2');
+// }); 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{id}', 'TweetsController@index');  //match any thing, so at last, id parameter to page index

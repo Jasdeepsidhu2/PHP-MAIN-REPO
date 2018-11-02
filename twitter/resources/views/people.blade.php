@@ -1,15 +1,18 @@
 
 
 <div class="people flex">
-        <div >
+<div >
                 <img class='image' 
-                src="<?php echo $twitter->image ?>"> 
+                src="<?php echo $twitter->profile->image ?>"> 
             
 
         </div>   
         
         <div class='peopleDescription'>
-            <p><?php echo $twitter->name ?></p>
-            <p><?php echo $twitter->handle ?></p>
+        <a href="/<?php echo $twitter->id?>"> 
+                <p><?php echo $twitter->name ?></p>
+                <p><?php echo $twitter->profile->handle ?></p>
+        
+        </a>
         </div>
 </div>

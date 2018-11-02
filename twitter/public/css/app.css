@@ -10517,14 +10517,12 @@ a.text-dark:focus {
 }
 
 header .top-top {
-  height: 70px;
-  background: black;
+  height: 100px;
 }
 
 header .hero {
   height: 400px;
-  background: url("https://pbs.twimg.com/profile_banners/158331222/1528372321/1500x500");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -10542,7 +10540,6 @@ header .stats {
 header .stats .profile-pic {
   height: 201px;
   width: 200px;
-  background: url("https://pbs.twimg.com/profile_images/521655203011899392/pxOndDc7_bigger.png") no-repeat;
   background-size: cover;
   border-radius: 50%;
   border: 4px solid wheat;
@@ -10609,5 +10606,10 @@ main .suggestions .suggestionCard1 .people .image {
 main .suggestions .suggestionCard2 {
   height: 30%;
   margin-bottom: 2%;
+}
+
+#regForm {
+  text-align: center;
+  width: 50%;
 }
 
